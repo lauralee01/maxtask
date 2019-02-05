@@ -65,6 +65,8 @@ Object.freeze(MORSE_CODE);
  */
 function decodeMorse(morseCode) {
   // Your code should go here.
-  return morseCode.trim().split(' ').map(a => MORSE_CODE[a] || ' ').join('').replace(/\s+/g, ' ');
+  return morseCode.trim().split(' ')
+    .map(a => MORSE_CODE[a] || ' ')
+      .join('').replace(/\s+/g, ' ');
 }
 module.exports = decodeMorse;
